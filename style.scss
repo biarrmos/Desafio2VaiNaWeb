@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff69b4;
+  color: #e4eef1;
+  height: 15vh;  
+  width: 100vw;  
+
+  h1 {
+    font-weight: inherit;
+    font-size: 1rem;  
+  }
+
+  .logoHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+
+    .logo {
+      width: 5rem;  
+      height: 5rem;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2%;
+    width: 40%;
+
+    .lista {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+
+      a {
+        color: #e4eef1;
+        font-size: 1rem; 
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+
+  .mainPrimeiro, .mainSegundo, .mainTerceiro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    background-color: #ffd9ec;
+  }
+
+  .mainSegundo {
+    background-color: #ff69b4;
+  }
+
+  .imgMain, .textoMain {
+    width: 30%;  
+    padding: 2rem; 
+  }
+
+  .imgMain {
+    max-width: 100%;  
+    height: 45vh;  
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff69b4;
+  color: #e4eef1;
+  width: 100vw;
+
+  .imgsFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;  
+
+    .img {
+      width: 2.5rem;  
+      height: 2.5rem;
+    }
+  }
+
+  .textoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;  
+  }
+
+  .fitaFooter {
+    width: 5rem;  
+    height: 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    width: 50%;
+  }
+
+  main .imgMain {
+    width: 24%;  
+  }
+}
+
+@media (max-width: 1043px) and (max-height: 853px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+
+    .logoHeader {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      width: 80%;
+      margin-right: 0;
+
+      .lista {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 1rem;
+
+    .mainPrimeiro, .mainSegundo, .mainTerceiro {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .imgMain {
+      width: 70%;  
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+
+    .imgsFooter {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+
+    .textoFooter {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main .imgMain, main .textoMain {
+    width: 90%;
+  }
+
+  footer .imgsFooter {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 0.875rem;
+  }
+
+  main .imgMain {
+    width: 70%;  
+  }
+
+  footer {
+    flex-direction: column;
+
+    .imgsFooter {
+      width: 100%;
+    }
+
+    .textoFooter {
+      font-size: 0.875rem;
+    }
+  }
+}

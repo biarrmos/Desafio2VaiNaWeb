@@ -1,1 +1,199 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff69b4;
+  color: #e4eef1;
+  height: 15vh;
+  width: 100vw;
+}
+header h1 {
+  font-weight: inherit;
+  font-size: 1rem;
+}
+header .logoHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
+}
+header .logoHeader .logo {
+  width: 5rem;
+  height: 5rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 2%;
+  width: 40%;
+}
+header nav .lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+header nav .lista a {
+  color: #e4eef1;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+main .mainPrimeiro, main .mainSegundo, main .mainTerceiro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 55vh;
+  background-color: #ffd9ec;
+}
+main .mainSegundo {
+  background-color: #ff69b4;
+}
+main .imgMain, main .textoMain {
+  width: 30%;
+  padding: 2rem;
+}
+main .imgMain {
+  max-width: 100%;
+  height: 45vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff69b4;
+  color: #e4eef1;
+  width: 100vw;
+}
+footer .imgsFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20%;
+}
+footer .imgsFooter .img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer .textoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+footer .fitaFooter {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    width: 50%;
+  }
+  main .imgMain {
+    width: 24%;
+  }
+}
+@media (max-width: 1043px) and (max-height: 853px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  header .logoHeader {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  header nav {
+    width: 80%;
+    margin-right: 0;
+  }
+  header nav .lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav .lista a {
+    margin-bottom: 1rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  main .mainPrimeiro, main .mainSegundo, main .mainTerceiro {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  main .imgMain {
+    width: 70%;
+  }
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  footer .imgsFooter {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  footer .textoFooter {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 768px) {
+  main .imgMain, main .textoMain {
+    width: 90%;
+  }
+  footer .imgsFooter {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header h1 {
+    font-size: 0.875rem;
+  }
+  main .imgMain {
+    width: 70%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .imgsFooter {
+    width: 100%;
+  }
+  footer .textoFooter {
+    font-size: 0.875rem;
+  }
+}/*# sourceMappingURL=style.css.map */
